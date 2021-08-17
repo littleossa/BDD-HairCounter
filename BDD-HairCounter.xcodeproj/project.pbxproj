@@ -13,7 +13,7 @@
 		986F761126CB59440012994A /* HairCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F760F26CB59440012994A /* HairCounter.storyboard */; };
 		986F761326CB594A0012994A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986F761226CB594A0012994A /* Assets.xcassets */; };
 		986F761626CB594A0012994A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F761426CB594A0012994A /* LaunchScreen.storyboard */; };
-		986F762126CB594B0012994A /* BDD_HairCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F762026CB594B0012994A /* BDD_HairCounterTests.swift */; };
+		986F762126CB594B0012994A /* HairCounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F762026CB594B0012994A /* HairCounterViewControllerTests.swift */; };
 		986F762C26CB594B0012994A /* BDD_HairCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F762B26CB594B0012994A /* BDD_HairCounterUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		986F761526CB594A0012994A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986F761726CB594A0012994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		986F761C26CB594B0012994A /* BDD-HairCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BDD-HairCounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		986F762026CB594B0012994A /* BDD_HairCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDD_HairCounterTests.swift; sourceTree = "<group>"; };
+		986F762026CB594B0012994A /* HairCounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCounterViewControllerTests.swift; sourceTree = "<group>"; };
 		986F762226CB594B0012994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		986F762726CB594B0012994A /* BDD-HairCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BDD-HairCounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986F762B26CB594B0012994A /* BDD_HairCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDD_HairCounterUITests.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		986F761F26CB594B0012994A /* BDD-HairCounterTests */ = {
 			isa = PBXGroup;
 			children = (
-				986F762026CB594B0012994A /* BDD_HairCounterTests.swift */,
+				986F762026CB594B0012994A /* HairCounterViewControllerTests.swift */,
 				986F762226CB594B0012994A /* Info.plist */,
 			);
 			path = "BDD-HairCounterTests";
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986F762126CB594B0012994A /* BDD_HairCounterTests.swift in Sources */,
+				986F762126CB594B0012994A /* HairCounterViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
