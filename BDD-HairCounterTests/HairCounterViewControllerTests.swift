@@ -30,4 +30,8 @@ class HairCounterViewControllerTests: XCTestCase {
     func test_初期表示時_文字入力ルール説明の文字が表示されていること() {
         XCTAssertEqual(viewController.ruleDescriptionLabel.text, "0~10までの数字を入力してください")
     }
+    
+    func test_初期起動時_テキストフィールドに0という文字が入力されていること() {
+        XCTAssertEqual(viewController.hairCountTextField.text, "0")
+    }
 }
