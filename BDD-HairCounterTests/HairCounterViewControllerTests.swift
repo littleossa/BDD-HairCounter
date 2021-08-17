@@ -11,23 +11,20 @@ import XCTest
 class HairCounterViewControllerTests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_初期起動時_画像にhair0が表示されていること() {
+        let stroyboard = UIStoryboard(name: "HairCounter", bundle: nil)
+        let viewController = stroyboard.instantiateInitialViewController() as! HairCounterViewController
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = viewController
+        // 画面表示を行う
+        window.makeKeyAndVisible()
+        // 初期起動時の処理を実行する
+        viewController.viewDidLoad()
+        XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair0"))
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
