@@ -27,4 +27,18 @@ class HairCounterViewControllerTests: XCTestCase {
         viewController.viewDidLoad()
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair0"))
     }
+    
+//    初期表示時に文字入力のルール説明の文字が表示されていること
+    func test_初期表示時_文字入力ルール説明の文字が表示されていること() {
+        let stroyboard = UIStoryboard(name: "HairCounter", bundle: nil)
+        let viewController = stroyboard.instantiateInitialViewController() as! HairCounterViewController
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = viewController
+        window.makeKeyAndVisible()
+        viewController.viewDidLoad()
+        XCTAssertEqual(viewController.ruleDescriptionLabel.text, "0~10までの数字を入力してください")
+    }
+    
+    
+//    初期表示時に０という文字が入力されていること
 }

@@ -22,17 +22,26 @@
                                     <constraint firstAttribute="width" secondItem="Rox-bi-IOw" secondAttribute="height" multiplier="1:1" id="vIn-VI-Q7Y"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0~10までの数字を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="OH5-of-IGg">
+                                <rect key="frame" x="70.666666666666686" y="362" width="249" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Rox-bi-IOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="9aa-h4-g1f"/>
                             <constraint firstItem="Rox-bi-IOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BzD-SM-uaM"/>
+                            <constraint firstItem="OH5-of-IGg" firstAttribute="top" secondItem="Rox-bi-IOw" secondAttribute="bottom" constant="15" id="ULD-lx-NpN"/>
+                            <constraint firstItem="OH5-of-IGg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vju-Jg-HNv"/>
                             <constraint firstItem="Rox-bi-IOw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="sAc-jU-Oka"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="hairImageView" destination="Rox-bi-IOw" id="e3e-H1-bq9"/>
+                        <outlet property="ruleDescriptionLabel" destination="OH5-of-IGg" id="dCi-AN-bCi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
