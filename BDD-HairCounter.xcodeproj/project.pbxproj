@@ -24,13 +24,6 @@
 			remoteGlobalIDString = 986F760526CB59440012994A;
 			remoteInfo = "BDD-HairCounter";
 		};
-		986F762826CB594B0012994A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 986F75FE26CB59440012994A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 986F760526CB59440012994A;
-			remoteInfo = "BDD-HairCounter";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +38,6 @@
 		986F761C26CB594B0012994A /* BDD-HairCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BDD-HairCounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986F762026CB594B0012994A /* HairCounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCounterViewControllerTests.swift; sourceTree = "<group>"; };
 		986F762226CB594B0012994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		986F762726CB594B0012994A /* BDD-HairCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BDD-HairCounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		986F762D26CB594B0012994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		986F762426CB594B0012994A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,7 +63,6 @@
 			children = (
 				986F760826CB59440012994A /* BDD-HairCounter */,
 				986F761F26CB594B0012994A /* BDD-HairCounterTests */,
-				986F762A26CB594B0012994A /* BDD-HairCounterUITests */,
 				986F760726CB59440012994A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +72,6 @@
 			children = (
 				986F760626CB59440012994A /* BDD-HairCounter.app */,
 				986F761C26CB594B0012994A /* BDD-HairCounterTests.xctest */,
-				986F762726CB594B0012994A /* BDD-HairCounterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,14 +97,6 @@
 				986F762226CB594B0012994A /* Info.plist */,
 			);
 			path = "BDD-HairCounterTests";
-			sourceTree = "<group>";
-		};
-		986F762A26CB594B0012994A /* BDD-HairCounterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				986F762D26CB594B0012994A /* Info.plist */,
-			);
-			path = "BDD-HairCounterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,24 +137,6 @@
 			productReference = 986F761C26CB594B0012994A /* BDD-HairCounterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		986F762626CB594B0012994A /* BDD-HairCounterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 986F763626CB594B0012994A /* Build configuration list for PBXNativeTarget "BDD-HairCounterUITests" */;
-			buildPhases = (
-				986F762326CB594B0012994A /* Sources */,
-				986F762426CB594B0012994A /* Frameworks */,
-				986F762526CB594B0012994A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				986F762926CB594B0012994A /* PBXTargetDependency */,
-			);
-			name = "BDD-HairCounterUITests";
-			productName = "BDD-HairCounterUITests";
-			productReference = 986F762726CB594B0012994A /* BDD-HairCounterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,10 +150,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					986F761B26CB594B0012994A = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 986F760526CB59440012994A;
-					};
-					986F762626CB594B0012994A = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 986F760526CB59440012994A;
 					};
@@ -218,7 +170,6 @@
 			targets = (
 				986F760526CB59440012994A /* BDD-HairCounter */,
 				986F761B26CB594B0012994A /* BDD-HairCounterTests */,
-				986F762626CB594B0012994A /* BDD-HairCounterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,13 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		986F761A26CB594B0012994A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		986F762526CB594B0012994A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,13 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		986F762326CB594B0012994A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -283,11 +220,6 @@
 			isa = PBXTargetDependency;
 			target = 986F760526CB59440012994A /* BDD-HairCounter */;
 			targetProxy = 986F761D26CB594B0012994A /* PBXContainerItemProxy */;
-		};
-		986F762926CB594B0012994A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 986F760526CB59440012994A /* BDD-HairCounter */;
-			targetProxy = 986F762826CB594B0012994A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,46 +441,6 @@
 			};
 			name = Release;
 		};
-		986F763726CB594B0012994A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88W4494JF2;
-				INFOPLIST_FILE = "BDD-HairCounterUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.classmethos.osamu.hiraoka.BDD-HairCounterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "BDD-HairCounter";
-			};
-			name = Debug;
-		};
-		986F763826CB594B0012994A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 88W4494JF2;
-				INFOPLIST_FILE = "BDD-HairCounterUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.classmethos.osamu.hiraoka.BDD-HairCounterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "BDD-HairCounter";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,15 +467,6 @@
 			buildConfigurations = (
 				986F763426CB594B0012994A /* Debug */,
 				986F763526CB594B0012994A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		986F763626CB594B0012994A /* Build configuration list for PBXNativeTarget "BDD-HairCounterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				986F763726CB594B0012994A /* Debug */,
-				986F763826CB594B0012994A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
