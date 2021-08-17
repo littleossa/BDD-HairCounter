@@ -34,4 +34,8 @@ class HairCounterViewControllerTests: XCTestCase {
     func test_初期起動時_テキストフィールドに0という文字が入力されていること() {
         XCTAssertEqual(viewController.hairCountTextField.text, "0")
     }
+    
+    func test_初期起動時_キーボードのタイプが数字入力になっていること() {
+        XCTAssertEqual(viewController.hairCountTextField.keyboardType, .numberPad)
+    }
 }
