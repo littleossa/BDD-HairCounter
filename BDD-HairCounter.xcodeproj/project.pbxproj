@@ -10,7 +10,7 @@
 		986F760A26CB59440012994A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F760926CB59440012994A /* AppDelegate.swift */; };
 		986F760C26CB59440012994A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F760B26CB59440012994A /* SceneDelegate.swift */; };
 		986F760E26CB59440012994A /* HairCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F760D26CB59440012994A /* HairCounterViewController.swift */; };
-		986F761126CB59440012994A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F760F26CB59440012994A /* Main.storyboard */; };
+		986F761126CB59440012994A /* HairCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F760F26CB59440012994A /* HairCounter.storyboard */; };
 		986F761326CB594A0012994A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986F761226CB594A0012994A /* Assets.xcassets */; };
 		986F761626CB594A0012994A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F761426CB594A0012994A /* LaunchScreen.storyboard */; };
 		986F762126CB594B0012994A /* BDD_HairCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F762026CB594B0012994A /* BDD_HairCounterTests.swift */; };
@@ -39,7 +39,7 @@
 		986F760926CB59440012994A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986F760B26CB59440012994A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		986F760D26CB59440012994A /* HairCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCounterViewController.swift; sourceTree = "<group>"; };
-		986F761026CB59440012994A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		986F761026CB59440012994A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HairCounter.storyboard; sourceTree = "<group>"; };
 		986F761226CB594A0012994A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986F761526CB594A0012994A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986F761726CB594A0012994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				986F760926CB59440012994A /* AppDelegate.swift */,
 				986F760B26CB59440012994A /* SceneDelegate.swift */,
 				986F760D26CB59440012994A /* HairCounterViewController.swift */,
-				986F760F26CB59440012994A /* Main.storyboard */,
+				986F760F26CB59440012994A /* HairCounter.storyboard */,
 				986F761226CB594A0012994A /* Assets.xcassets */,
 				986F761426CB594A0012994A /* LaunchScreen.storyboard */,
 				986F761726CB594A0012994A /* Info.plist */,
@@ -233,7 +233,7 @@
 			files = (
 				986F761626CB594A0012994A /* LaunchScreen.storyboard in Resources */,
 				986F761326CB594A0012994A /* Assets.xcassets in Resources */,
-				986F761126CB59440012994A /* Main.storyboard in Resources */,
+				986F761126CB59440012994A /* HairCounter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +296,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		986F760F26CB59440012994A /* Main.storyboard */ = {
+		986F760F26CB59440012994A /* HairCounter.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				986F761026CB59440012994A /* Base */,
 			);
-			name = Main.storyboard;
+			name = HairCounter.storyboard;
 			sourceTree = "<group>";
 		};
 		986F761426CB594A0012994A /* LaunchScreen.storyboard */ = {
