@@ -29,14 +29,14 @@ extension HairCounterViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         guard let text = textField.text,
-              let number = Int(text),
-              number <= 10
+              let hairCount = Int(text),
+              hairCount <= 10
         else {
             hairImageView.changeHairImage(by: nil)
             return true
         }
         
-        hairImageView.changeHairImage(by: number)
+        hairImageView.changeHairImage(by: hairCount)
         return true
     }
 }
