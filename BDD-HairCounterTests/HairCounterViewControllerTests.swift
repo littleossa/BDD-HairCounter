@@ -49,30 +49,30 @@ class HairCounterViewControllerTests: XCTestCase {
     
     func test_TextFieldの文字の値が変わった時_値が0から10_画像にその値に紐づく画像が表示されていること() {
         for i in 0...10 {
-            hairCountTextField.changeValue(into: "\(i)", on: viewController)
+            hairCountTextField.valueChange(into: "\(i)", on: viewController)
             XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair\(i)"))
         }
     }
     
     func test_TextFieldの文字の値が変わった時_値が11_画像にerrorが表示されていること() {
-        hairCountTextField.changeValue(into: "11", on: viewController)
+        hairCountTextField.valueChange(into: "11", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
     }
     
     func test_TextFieldの文字の値が変わった時_値が12_画像にerrorが表示されていること() {
-        hairCountTextField.changeValue(into: "12", on: viewController)
+        hairCountTextField.valueChange(into: "12", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
     }
     
     func test_TextFieldの文字の値が変わった時_値が何もない_画像にerrorが表示されていること() {
-        hairCountTextField.changeValue(into: "", on: viewController)
+        hairCountTextField.valueChange(into: "", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
     }
 }
 
 private extension UITextField {
     
-    func changeValue(into value: String, on viewController: HairCounterViewController) {
+    func valueChange(into value: String, on viewController: HairCounterViewController) {
         self.text = value
         viewController.textFieldDidChangeSelection(self)
     }
