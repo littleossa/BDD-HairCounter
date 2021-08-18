@@ -79,6 +79,7 @@
 		986F760826CB59440012994A /* BDD-HairCounter */ = {
 			isa = PBXGroup;
 			children = (
+				986F763926CCCC780012994A /* Extensions */,
 				986F760926CB59440012994A /* AppDelegate.swift */,
 				986F760B26CB59440012994A /* SceneDelegate.swift */,
 				986F760D26CB59440012994A /* HairCounterViewController.swift */,
@@ -97,6 +98,13 @@
 				986F762226CB594B0012994A /* Info.plist */,
 			);
 			path = "BDD-HairCounterTests";
+			sourceTree = "<group>";
+		};
+		986F763926CCCC780012994A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
