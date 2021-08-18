@@ -31,7 +31,6 @@ class HairCounterViewController: UIViewController {
 extension HairCounterViewController: UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        
         guard let text = textField.text,
               let hairCount = Int(text),
               hairCount <= 10
