@@ -17,6 +17,10 @@ class HairCounterViewController: UIViewController {
         super.viewDidLoad()
         hairImageView.image = UIImage(named: "hair0")
         ruleDescriptionLabel.text = "0~10までの数字を入力してください"
+        setUpHairCountTextField()
+    }
+    
+    private func setUpHairCountTextField() {
         hairCountTextField.text = "0"
         hairCountTextField.keyboardType = .numberPad
         hairCountTextField.becomeFirstResponder()
