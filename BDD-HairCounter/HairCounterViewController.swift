@@ -19,6 +19,7 @@ class HairCounterViewController: UIViewController {
         ruleDescriptionLabel.text = "0~10までの数字を入力してください"
         hairCountTextField.text = "0"
         hairCountTextField.keyboardType = .numberPad
+        hairCountTextField.becomeFirstResponder()
     }
 }
 
