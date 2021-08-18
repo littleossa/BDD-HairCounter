@@ -27,7 +27,9 @@ class HairCounterViewController: UIViewController {
 extension HairCounterViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
         guard let number = Int(textField.text!) else {
+            hairImageView.image = UIImage(named: "error")
             return true
         }
         let imageName: String
