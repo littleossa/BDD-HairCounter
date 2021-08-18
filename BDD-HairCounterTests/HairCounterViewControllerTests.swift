@@ -45,21 +45,26 @@ class HairCounterViewControllerTests: XCTestCase {
     
     func test_TextFieldの文字の値が変わった時_値が0から10_画像にその値に紐づく画像が表示されていること() {
         for i in 0...10 {
-            viewController.hairCountTextField.text = "\(i)"
-            _ = viewController.textField(viewController.hairCountTextField, shouldChangeCharactersIn: NSRange(), replacementString: "")
+            viewController.hairCountTextField.changeValue(into: "\(i)", on: viewController)
             XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair\(i)"))
         }
     }
     
     func test_TextFieldの文字の値が変わった時_値が11_画像にerrorが表示されていること() {
-        viewController.hairCountTextField.text = "11"
-        _ = viewController.textField(viewController.hairCountTextField, shouldChangeCharactersIn: NSRange(), replacementString: "")
+        viewController.hairCountTextField.changeValue(into: "11", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
     }
     
     func test_TextFieldの文字の値が変わった時_値が12_画像にerrorが表示されていること() {
-        viewController.hairCountTextField.text = "12"
-        _ = viewController.textField(viewController.hairCountTextField, shouldChangeCharactersIn: NSRange(), replacementString: "")
+        viewController.hairCountTextField.changeValue(into: "12", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
+    }
+}
+
+private extension UITextField {
+    
+    func changeValue(into value: String, on viewController: HairCounterViewController) {
+        self.text = value
+        _ = viewController.textField(self, shouldChangeCharactersIn: NSRange(), replacementString: "")
     }
 }
