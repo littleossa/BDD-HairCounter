@@ -50,4 +50,16 @@ class HairCounterViewControllerTests: XCTestCase {
             XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair\(i)"))
         }
     }
+    
+    func test_TextFieldの文字の値が変わった時_値が11_画像にerrorが表示されていること() {
+        viewController.hairCountTextField.text = "11"
+        _ = viewController.textField(viewController.hairCountTextField, shouldChangeCharactersIn: NSRange(), replacementString: "")
+        XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
+    }
+    
+    func test_TextFieldの文字の値が変わった時_値が12_画像にerrorが表示されていること() {
+        viewController.hairCountTextField.text = "12"
+        _ = viewController.textField(viewController.hairCountTextField, shouldChangeCharactersIn: NSRange(), replacementString: "")
+        XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
+    }
 }
