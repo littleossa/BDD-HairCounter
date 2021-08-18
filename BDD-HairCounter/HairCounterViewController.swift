@@ -28,18 +28,27 @@ extension HairCounterViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        guard let number = Int(textField.text!) else {
-            hairImageView.image = UIImage(named: "error")
+        guard let text = textField.text,
+              let number = Int(text),
+              number <= 10
+        else {
+            hairImageView.changeHairImage(by: nil)
             return true
         }
-        let imageName: String
-        if number > 10 {
-            imageName = "error"
-        } else {
-            imageName = "hair" + String(number)
-        }
-        hairImageView.image = UIImage(named: imageName)
+        
+        hairImageView.changeHairImage(by: number)
         return true
+    }
+}
+
+extension UIImageView {
+    
+    func changeHairImage(by count: Int?) {
+        guard let count = count else {
+            self.image = UIImage(named: "error")
+            return
+        }
+        self.image = UIImage(named: "hair" + String(count))
     }
 }
 
