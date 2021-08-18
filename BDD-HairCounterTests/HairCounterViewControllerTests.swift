@@ -42,4 +42,12 @@ class HairCounterViewControllerTests: XCTestCase {
     func test_初期起動時_キーボードが表示されていること() {
         XCTAssertTrue(viewController.hairCountTextField.isFirstResponder)
     }
+    
+    func test_TextFieldの文字の値が変わった時_値が0から10_画像にその値に紐づく画像が表示されていること() {
+        for i in 0...10 {
+            viewController.hairCountTextField.text = "\(i)"
+            _ = viewController.textField(viewController.hairCountTextField, shouldChangeCharactersIn: NSRange(), replacementString: "")
+            XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair\(i)"))
+        }
+    }
 }

@@ -20,6 +20,15 @@ class HairCounterViewController: UIViewController {
         hairCountTextField.text = "0"
         hairCountTextField.keyboardType = .numberPad
         hairCountTextField.becomeFirstResponder()
+        hairCountTextField.delegate = self
+    }
+}
+
+extension HairCounterViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        hairImageView.image = UIImage(named: "hair\(textField.text!)")
+        return true
     }
 }
 
