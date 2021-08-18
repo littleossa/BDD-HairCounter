@@ -32,7 +32,7 @@
                                 <rect key="frame" x="155" y="395" width="80" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="vav-Lf-ca5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="vav-Lf-ca5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
