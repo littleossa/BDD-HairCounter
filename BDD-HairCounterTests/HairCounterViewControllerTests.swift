@@ -11,6 +11,10 @@ import XCTest
 class HairCounterViewControllerTests: XCTestCase {
     
     private var viewController: HairCounterViewController!
+    
+    private var hairCountTextField: UITextField {
+        return viewController.hairCountTextField
+    }
 
     override func setUpWithError() throws {
         let stroyboard = UIStoryboard(name: "HairCounter", bundle: nil)
@@ -32,31 +36,31 @@ class HairCounterViewControllerTests: XCTestCase {
     }
     
     func test_初期起動時_テキストフィールドに0という文字が入力されていること() {
-        XCTAssertEqual(viewController.hairCountTextField.text, "0")
+        XCTAssertEqual(hairCountTextField.text, "0")
     }
     
     func test_初期起動時_キーボードのタイプが数字入力になっていること() {
-        XCTAssertEqual(viewController.hairCountTextField.keyboardType, .numberPad)
+        XCTAssertEqual(hairCountTextField.keyboardType, .numberPad)
     }
     
     func test_初期起動時_キーボードが表示されていること() {
-        XCTAssertTrue(viewController.hairCountTextField.isFirstResponder)
+        XCTAssertTrue(hairCountTextField.isFirstResponder)
     }
     
     func test_TextFieldの文字の値が変わった時_値が0から10_画像にその値に紐づく画像が表示されていること() {
         for i in 0...10 {
-            viewController.hairCountTextField.changeValue(into: "\(i)", on: viewController)
+            hairCountTextField.changeValue(into: "\(i)", on: viewController)
             XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "hair\(i)"))
         }
     }
     
     func test_TextFieldの文字の値が変わった時_値が11_画像にerrorが表示されていること() {
-        viewController.hairCountTextField.changeValue(into: "11", on: viewController)
+        hairCountTextField.changeValue(into: "11", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
     }
     
     func test_TextFieldの文字の値が変わった時_値が12_画像にerrorが表示されていること() {
-        viewController.hairCountTextField.changeValue(into: "12", on: viewController)
+        hairCountTextField.changeValue(into: "12", on: viewController)
         XCTAssertEqual(viewController.hairImageView.image, UIImage(named: "error"))
     }
 }
