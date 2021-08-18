@@ -30,18 +30,18 @@ class HairCounterViewController: UIViewController {
 
 extension HairCounterViewController: UITextFieldDelegate {
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
         
         guard let text = textField.text,
               let hairCount = Int(text),
               hairCount <= 10
         else {
             hairImageView.changeHairImage(by: nil)
-            return true
+            return
         }
         
         hairImageView.changeHairImage(by: hairCount)
-        return true
+        return
     }
 }
 

@@ -74,6 +74,6 @@ private extension UITextField {
     
     func changeValue(into value: String, on viewController: HairCounterViewController) {
         self.text = value
-        _ = viewController.textField(self, shouldChangeCharactersIn: NSRange(), replacementString: "")
+        viewController.textFieldDidChangeSelection(self)
     }
 }
