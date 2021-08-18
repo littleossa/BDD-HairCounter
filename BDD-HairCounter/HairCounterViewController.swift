@@ -41,14 +41,3 @@ extension HairCounterViewController: UITextFieldDelegate {
     }
 }
 
-extension UIImageView {
-    
-    func changeHairImage(by count: Int?) {
-        guard let count = count else {
-            self.image = UIImage(named: "error")
-            return
-        }
-        self.image = UIImage(named: "hair" + String(count))
-    }
-}
-

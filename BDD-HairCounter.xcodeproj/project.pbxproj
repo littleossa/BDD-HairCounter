@@ -14,6 +14,7 @@
 		986F761326CB594A0012994A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986F761226CB594A0012994A /* Assets.xcassets */; };
 		986F761626CB594A0012994A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F761426CB594A0012994A /* LaunchScreen.storyboard */; };
 		986F762126CB594B0012994A /* HairCounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F762026CB594B0012994A /* HairCounterViewControllerTests.swift */; };
+		986F763B26CCCCCF0012994A /* UIImage+changeHairImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F763A26CCCCCF0012994A /* UIImage+changeHairImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		986F761C26CB594B0012994A /* BDD-HairCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BDD-HairCounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986F762026CB594B0012994A /* HairCounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCounterViewControllerTests.swift; sourceTree = "<group>"; };
 		986F762226CB594B0012994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986F763A26CCCCCF0012994A /* UIImage+changeHairImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+changeHairImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		986F763926CCCC780012994A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				986F763A26CCCCCF0012994A /* UIImage+changeHairImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986F760E26CB59440012994A /* HairCounterViewController.swift in Sources */,
+				986F763B26CCCCCF0012994A /* UIImage+changeHairImage.swift in Sources */,
 				986F760A26CB59440012994A /* AppDelegate.swift in Sources */,
 				986F760C26CB59440012994A /* SceneDelegate.swift in Sources */,
 			);
