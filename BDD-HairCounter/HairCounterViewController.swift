@@ -31,16 +31,13 @@ class HairCounterViewController: UIViewController {
 extension HairCounterViewController: UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        guard let text = textField.text,
-              let hairCount = Int(text),
+        guard let hairCount = Int(textField.text!),
               hairCount <= 10
         else {
             hairImageView.changeHairImage(by: nil)
             return
         }
-        
         hairImageView.changeHairImage(by: hairCount)
         return
     }
 }
-
