@@ -34,9 +34,9 @@ extension HairCounterViewController: UITextFieldDelegate {
         guard let hairCount = Int(textField.text!),
               hairCount <= 10
         else {
-            hairImageView.changeHairImage(by: nil)
+            hairImageView.image = UIImage(named: "error")
             return
         }
-        hairImageView.changeHairImage(by: hairCount)
+        hairImageView.image = UIImage(named: "hair\(hairCount)")
     }
 }
