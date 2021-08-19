@@ -38,6 +38,5 @@ extension HairCounterViewController: UITextFieldDelegate {
             return
         }
         hairImageView.changeHairImage(by: hairCount)
-        return
     }
 }
