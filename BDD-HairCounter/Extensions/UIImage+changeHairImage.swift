@@ -14,6 +14,6 @@ extension UIImageView {
             self.image = UIImage(named: "error")
             return
         }
-        self.image = UIImage(named: "hair" + String(count))
+        self.image = UIImage(named: "hair\(count)")
     }
 }
