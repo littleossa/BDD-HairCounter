@@ -31,8 +31,6 @@ class HairCounterViewControllerTests: XCTestCase {
         window.rootViewController = viewController
         // 画面表示を行う
         window.makeKeyAndVisible()
-        // 初期起動時の処理を実行する
-        viewController.viewDidLoad()
     }
     
     func test_初期起動時_画像にhair0が表示されていること() {
